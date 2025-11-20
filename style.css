@@ -1,0 +1,113 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  background: skyblue;
+}
+
+header {
+  background: none;          
+  height: auto;              
+  padding: 0;
+}
+
+.introduction, .conclusion-card, .sources {
+  background: #0a97d9;
+  color: white;
+  max-width: 900px;
+  margin: 25px auto;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(198px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.goal-card img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+}
+
+.goal-card:hover img {
+  transform: scale(1.08);
+}
+
+.sdg {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 40px 25px;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+}
+
+.sdg h2 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.SDG {
+  width: 600px;      
+  max-width: 900px;
+  height: auto;     
+  border-radius: 10px;
+  margin: 0 auto;
+  display: block;
+}
+
+.back-button {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: skyblue;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  margin: 20px auto;
+  font-size: 1rem;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.back-button:hover {
+  background-color: lightblue;
+  transform: scale(1.05);
+}
+
+.sources-link {
+  color: white;
+  text-decoration: solid;
+}
+
+.sources-link:hover {
+  color:skyblue
+
+}
+
+@media (max-width: 600px) {
+  .sdg {
+    padding: 20px 50px;
+    margin: 40px auto;
+  }
+
+  .introduction, .conclusion-card, .sources {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .SDG {
+    max-width: 350px;
+  }
+}
+
